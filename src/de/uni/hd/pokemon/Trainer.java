@@ -37,8 +37,16 @@ public class Trainer {
     }
 
     public void linkPokemon(Pokemon p) {
+        if (p.getTrainer() != null) {
+            p.getTrainer().removePokemon(p);
+        }
         pokemons.add(p);
         p.setTrainer(this);
+    }
+
+    // required for linkPokemon method when stealing Pokemon
+    private void removePokemon(Pokemon p) {
+        pokemons.remove(p);
     }
 
     public ArrayList<Pokemon> listPokemon() { return pokemons; }

@@ -57,6 +57,7 @@ public class PokemonTest {
         Trainer trainer = new Trainer("Ash", "Ketchum");
 
         // Test of linkPokemon method
+        System.out.println();
         System.out.println("- Testen von linkPokemon -");
         System.out.println("Füge Pokemon p2 der Liste von Trainer trainer hinzu:");
         trainer.linkPokemon(p2);
@@ -92,7 +93,7 @@ public class PokemonTest {
         System.out.println();
         System.out.println("- Testen von setLastName -");
         System.out.println("Setze Nachname von Trainer trainer von 'Ketchum' auf 'Mustermann'.");
-        trainer.setLastName("Max");
+        trainer.setLastName("Mustermann");
         System.out.println("Nachname von Trainer trainer wurde zu 'Mustermann' umbenannt.");
         System.out.println("Prüfe auf Erfolg von setLastName:");
         System.out.println(trainer.getLastName());
@@ -104,16 +105,19 @@ public class PokemonTest {
         System.out.println(trainer);
 
         // Test of listPokemon method
+        System.out.println();
         System.out.println("- Testen der listPokemon-Methode -");
         System.out.println("Gebe Liste der Pokemon von trainer aus:");
         System.out.println(trainer.listPokemon());
 
         // Test of listPokemonByType method
+        System.out.println();
         System.out.println("- Testen der listPokemonByType-Methode -");
         System.out.println("Gebe Liste der Pokemon von trainer vom Typ 'WATER' aus:");
         System.out.println(trainer.listPokemonByType(Type.WATER));
 
         // Test of getPokemonByIndex method
+        System.out.println();
         System.out.println("- Testen der getPokemonByIndex-Methode -");
         System.out.println("Gebe zweites Pokemon von trainer aus:");
         System.out.println(trainer.getPokemonByIndex(1));
